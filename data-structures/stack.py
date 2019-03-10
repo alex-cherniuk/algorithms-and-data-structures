@@ -44,3 +44,17 @@ if __name__ == '__main__':
             print(stack)
         except IndexError as error:
             print(error)
+            
+# Size  0, Stack: [  ]
+# Size  1, Stack: [ 0 ]
+# Size  2, Stack: [ 0 | 1 ]
+# Size  3, Stack: [ 0 | 1 | 2 ]
+# Size  4, Stack: [ 0 | 1 | 2 | 3 ]
+# Size  5, Stack: [ 0 | 1 | 2 | 3 | 4 ]
+# Can't push 5. Stack is overflow
+# Size  4, Stack: [ 0 | 1 | 2 | 3 ]
+# Size  3, Stack: [ 0 | 1 | 2 ]
+# Size  2, Stack: [ 0 | 1 ]
+# Size  1, Stack: [ 0 ]
+# Size  0, Stack: [  ]
+# Can't pop last value. Stack is empty
