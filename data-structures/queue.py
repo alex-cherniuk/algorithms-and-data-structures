@@ -44,3 +44,17 @@ if __name__ == '__main__':
             print("Size %2i, Queue: %s" %(len(queue), queue))
         except IndexError as error:
             print(error)
+        
+# Size  0, Queue: [  ]
+# Size  1, Queue: [ 0 ]
+# Size  2, Queue: [ 0 | 1 ]
+# Size  3, Queue: [ 0 | 1 | 2 ]
+# Size  4, Queue: [ 0 | 1 | 2 | 3 ]
+# Size  5, Queue: [ 0 | 1 | 2 | 3 | 4 ]
+# Can't enqueue 5. Queue is overflow
+# Size  4, Queue: [ 1 | 2 | 3 | 4 ]
+# Size  3, Queue: [ 2 | 3 | 4 ]
+# Size  2, Queue: [ 3 | 4 ]
+# Size  1, Queue: [ 4 ]
+# Size  0, Queue: [  ]
+# Can't dequeue first value. Queue is empty
